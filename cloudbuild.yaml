@@ -4,7 +4,7 @@ steps:
       [
         "build",
         "-t",
-        "northamerica-northeast1-docker.pkg.dev/tienda-microservices/image-registry/client-gateway",
+        "southamerica-west1-docker.pkg.dev/lithe-camp-458508-d4/image-ms/client-gateway",
         "-f",
         "dockerfile.prod",
         "--platform=linux/amd64",
@@ -14,5 +14,7 @@ steps:
     args:
       [
         "push",
-        "northamerica-northeast1-docker.pkg.dev/tienda-microservices/image-registry/client-gateway",
+        "southamerica-west1-docker.pkg.dev/lithe-camp-458508-d4/image-ms/client-gateway",
       ]
+options:
+  logging: CLOUD_LOGGING_ONLY
